@@ -1,9 +1,9 @@
 let quantasCartas;
 
-while (quantasCartas % 2 !== 0) {
+while (quantasCartas % 2 !== 0 || quantasCartas < 4 || quantasCartas > 14) {
   quantasCartas = prompt("Com quantas cartas você quer jogar?");
-  if (quantasCartas % 2 !== 0) {
-    alert("Digite somente números pares");
+  if (quantasCartas % 2 !== 0 || quantasCartas < 4 || quantasCartas > 14) {
+    alert("Digite somente números pares entre 4 e 14");
   }
 }
 
