@@ -8,6 +8,9 @@ header {
     align-items: center;
 
     padding-top: 40px;
+
+    background-color: lightblue;
+
 }
 header h1 {
     font-family: Roboto;
@@ -17,4 +20,19 @@ header h1 {
     letter-spacing: -0.004em;
 
     color: #75B79E;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 110px; 
+}
+
+.cartas {
+    width: 117px;
+    height: 146px;
+    background-color: lightcoral;
 }
