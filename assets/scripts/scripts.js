@@ -11,5 +11,9 @@ while (quantasCartas % 2 !== 0){
 const inserirCartas = document.querySelector(".mesaJogo");
 
 for (let i = 0; i < quantasCartas; i++) {
-    inserirCartas.innerHTML += `<div class="cartas"></div>`
+    inserirCartas.innerHTML += `
+        <div class="cartas">
+            <img src="assets/imagens/parot.png" alt="parrot">
+        </div>
+    `
 }

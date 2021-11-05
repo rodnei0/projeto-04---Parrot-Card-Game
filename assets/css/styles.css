@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #EEF9BF;
 }
@@ -7,10 +11,7 @@ header {
     justify-content: center;
     align-items: center;
 
-    padding-top: 40px;
-
-    background-color: lightblue;
-
+    padding: 40px 0;
 }
 header h1 {
     font-family: Roboto;
@@ -25,14 +26,26 @@ header h1 {
 main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 
     padding: 0 110px; 
 }
 
 .cartas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 117px;
     height: 146px;
-    background-color: lightcoral;
+    
+    background: #A7E9AF;
+    border: 1px solid #99CEA8;
+    border-radius: 5px;
 }
+
+.cartas img {
+    height: 100px;
+    width: 100px;
+}   
