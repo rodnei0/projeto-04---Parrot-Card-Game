@@ -1,0 +1,20 @@
+body {
+    background-color: #EEF9BF;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 40px;
+}
+header h1 {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 66px;
+    letter-spacing: -0.004em;
+
+    color: #75B79E;
+}
