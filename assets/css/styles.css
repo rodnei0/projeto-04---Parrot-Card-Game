@@ -11,6 +11,8 @@ header {
     justify-content: center;
     align-items: center;
 
+    position: relative;
+
     padding: 40px 0;
 }
 header h1 {
@@ -76,3 +78,54 @@ main {
   .click .front-face, .acertou .front-face {
     transform: rotateY(-180deg);
   }
+
+  .caixa-do-contador {
+    background-color: #A7E9AF;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+
+    margin-left: 50px;
+  }
+  
+  .contador {
+    font-family: Roboto;
+    font-weight: bold;
+
+    color: #183059;
+    font-size: 40px;
+  }
+
+  .rotulo {
+    font-family: Roboto;
+    font-weight: bold;
+
+    color: #183059;
+    font-size: 15px;
+  }
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 300px;
+
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: -0.004em;
+    text-align: center;
+    
+    color: #75B79E;
+}
+
+.iniciarJogo {
+    width: 300px;
+    background-color: #A7E9AF;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px auto;
+    text-align: center;
+}
