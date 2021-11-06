@@ -19,6 +19,7 @@ header h1 {
     font-size: 56px;
     line-height: 66px;
     letter-spacing: -0.004em;
+    text-align: center;
 
     color: #75B79E;
 }
@@ -40,6 +41,8 @@ main {
 
     width: 117px;
     height: 146px;
+
+    margin: 34px;
 }
 
 .card img {
@@ -66,10 +69,10 @@ main {
     transform: rotateY(180deg);
   }
 
-  .card:hover .back-face {
+  .click .back-face, .acertou .back-face {
     transform: rotateY(0deg);
   }
 
-  .card:hover .front-face {
+  .click .front-face, .acertou .front-face {
     transform: rotateY(-180deg);
   }
