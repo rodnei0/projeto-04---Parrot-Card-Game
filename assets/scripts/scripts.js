@@ -43,11 +43,11 @@ let contadorJogadas = 0;
 
 function virarCarta(elemento, par) {
   contadorJogadas++;
-    cartasViradas.push(elemento);
-    paresVirados.push(par);
+  cartasViradas.push(elemento);
+  paresVirados.push(par);
 
-    elemento.classList.toggle("click")
-    setTimeout(comparaCarta, 500);
+  elemento.classList.toggle("click")
+  setTimeout(comparaCarta, 300);
 }
 
 function desvirarCarta(elemento){0
@@ -87,8 +87,8 @@ function verificaVitoria() {
     alert(`Você ganhou em ${contadorJogadas} jogadas e ${segundos} segundos!`)
     
     let jogarNovamente = "";
-    
       jogarNovamente = prompt("Deseja jogar novamente? (S/N)");
+      
       if (jogarNovamente === "s" || jogarNovamente === "S") {
         quantasCartas = 0;
         iniciarJogo();
@@ -101,12 +101,8 @@ function verificaVitoria() {
     }
 }
 
-function comparador() {
-  return Math.random() - 0.5;
-}
-
-let segundos = 0;
 let idInterval;
+let segundos = 0;
 
 function contar() {
   idInterval = setInterval(incrementaSegundos, 1000);
@@ -115,4 +111,8 @@ function contar() {
 function incrementaSegundos() {
   segundos++;
   document.querySelector(".contador").innerHTML = segundos;
+}
+
+function comparador() {
+  return Math.random() - 0.5;
 }
