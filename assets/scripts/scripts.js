@@ -16,10 +16,10 @@ function iniciarJogo(){
   for (let i = 0; i < quantosPares; i++) {
     arrayDeCartas[i] = `
     <div class="card " data-identifier="card" onclick="virarCarta(this, ${i})">
-      <div class="front-face face" data-identifier="front-face">
+      <div class="front-face face" data-identifier="back-face">
         <img src="assets/imagens/parot.png" alt="parrot">
       </div>
-      <div class="back-face face" data-identifier="back-face">
+      <div class="back-face face" data-identifier="front-face">
         <img src="assets/imagens/parot${i}.gif" alt="parrot">
       </div>
     </div>`
